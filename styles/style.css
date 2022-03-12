@@ -4,7 +4,9 @@
   --text-heading: hsl(218, 44%, 22%);
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -32,14 +34,14 @@ h1 {
   color: var(--text-heading);
   font-weight: 700;
   font-size: 1.375em;
-  line-height: 1.2727em;
+  line-height: 1.2727;
   margin: 0 1rem 1rem;
 }
 
 p {
   color: var(--text-primary);
   font-size: 0.9375em;
-  line-height: 1.1875em;
+  line-height: 1.1875;
   letter-spacing: 0.1875px;
   margin: 0 1rem 1.5rem;
 }
@@ -55,13 +57,11 @@ footer {
   bottom: 2em;
 }
 
-/* HELPERS */
-
-.h-align--center {
+.h-center {
   text-align: center;
 }
 
-/* ORIGINAL CODE */
+/* FRONTEND MENTOR INITIAL CODE */
 
 .attribution {
   font-size: 11px;
